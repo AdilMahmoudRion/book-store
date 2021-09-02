@@ -2,7 +2,6 @@ document.getElementById("error-message").style.display = "none";
 const searchBook = () => {
   const searchFiled = document.getElementById("search-filed");
   const searchBookName = searchFiled.value;
-  console.log(searchBookName);
   //   searchFiled.value = " ";
   const url = `https://openlibrary.org/search.json?q=${searchBookName}`;
   fetch(url)
