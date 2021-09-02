@@ -45,15 +45,15 @@ const searchBookList = (booksName) => {
                     <img src="${imgUrl}" class="card-img-top w-100" alt="...">
                 <div class="card-body mt-3">
                     <h2 class="card-title">${book.title.slice(0, 50)}</h2>
-                     <p>
+                     <h5>
                      Author name: ${book.author_name}
+                     </h5>
+                     <p>
+                        Publisher: ${book.publisher}
                      </p>
-                     <h6>
-                     Publisher: ${book.publisher}
-                     </h6>
-                     <h6 class= "fs-6 fw-light text-muted">
+                     <h5 class= "fs-6 fw-light text-muted">
                      First publish date: ${book.first_publish_year}
-                     </h6>
+                     </h5>
                 </div>
             </div>
         `;
