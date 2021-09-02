@@ -1,5 +1,4 @@
 document.getElementById("error-message").style.display = "none";
-// document.getElementById('blank-input').style.display = 'none';
 const searchBook = () => {
   const searchFiled = document.getElementById("search-filed");
   const searchBookName = searchFiled.value;
@@ -47,9 +46,9 @@ const searchBookList = (booksName) => {
                     <img src="${imgUrl}" class="card-img-top w-100" alt="...">
                 <div class="card-body mt-3">
                     <h2 class="card-title">${book.title.slice(0, 50)}</h2>
-                     <h6>
+                     <p>
                      Author name: ${book.author_name}
-                     </h6>
+                     </p>
                      <h6>
                      Publisher: ${book.publisher}
                      </h6>
